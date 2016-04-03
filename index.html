@@ -72,7 +72,7 @@
 						<li>Tags</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -169,6 +169,300 @@
 
       <div class="body-wrap">
   
+    <article id="post-多态" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/多态/" class="article-date">
+  	<time datetime="2016-04-03T02:47:19.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/多态/">多态</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-super-关键字" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/super-关键字/" class="article-date">
+  	<time datetime="2016-04-03T02:47:09.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/super-关键字/">super 关键字</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>只需要利用super给父类的方法发送一个消息, 那么系统就会自动调用父类的方法。</p>
+</li>
+<li><p>如果以后想在子类中调用父类的方法可以使用super。</p>
+</li>
+<li><p>如果想在给父类方法进行扩展的同时保留父类的方法, 那么可以使用super调用父类同名的方法。</p>
+</li>
+<li><p>注意：</p>
+<ul>
+<li>super在类方法中, 一定会调用父类的类方法。</li>
+<li>super在对象方法中, 一定会调用父类的对象方法。</li>
+<li>可以利用super在任意方法中调用父类中的方法。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-继承" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/继承/" class="article-date">
+  	<time datetime="2016-04-03T02:46:50.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/继承/">继承</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1. 继承</p>
+<ul>
+<li><p>可以利用继承来解决当前重复代码太多的问题 。</p>
+</li>
+<li><p>只要A类继承了B类, 那么A类就拥有了B类的所有属性和方法(对象方法和类方法)。</p>
+</li>
+<li><p>继承的语法 @interface 类名 : 需要继承的类</p>
+<ul>
+<li>被继承的这个类我们称之为父类/ 超类</li>
+<li>继承了某个类的类我们称之为子类</li>
+</ul>
+</li>
+<li><p>优点:</p>
+<ul>
+<li>提高代码的复用性。</li>
+<li>可以让类与类之间产生关系, 正是因为继承让类与类之间产生了关系所以才有了多态。</li>
+</ul>
+</li>
+<li><p>缺点:</p>
+<ul>
+<li>耦合性太强(依赖性太强)。</li>
+</ul>
+</li>
+<li><p>注意: </p>
+<ul>
+<li>不要以为继承可以提高代码的复用性, 以后但凡发现多个类当中有重复代码就抽取一个父类。</li>
+<li>只要满足一定的条件我们才能使用继承<br>条件: XXXX 是 XXX   /    某某某 is a 某某某</li>
+</ul>
+</li>
+</ul>
+<p>#2. 重写</p>
+<ul>
+<li><p>如果子类中有和父类中同名的方法, 那么我们称之为方法重写<br>注意: 继承中的方法调用顺序, 先自己再父类, 如果父类中没有再爷爷类, 如果爷爷类再没有就找爷爷的爸爸类。</p>
+</li>
+<li><p>如果一直找到NSObject类都没有找到, 那么就会报错<br><code>reason: &#39;-[Iphone signalWithNumber:]: unrecognized selector sent to instance 0x1003043c0&#39;</code></p>
+</li>
+<li><p>注意: </p>
+<ul>
+<li>在继承中方法可以重写, 但是属性(成员变量)不能重写。</li>
+<li>在继承中除了对象方法可以重写, 类方法也可以重写。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-self-关键字" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/self-关键字/" class="article-date">
+  	<time datetime="2016-04-03T02:46:36.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/self-关键字/">self 关键字</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>self不能离开类, 离开类之后没有任何意义。</li>
+<li><p>其实在类方法中调用类方法除了可以使用类名调用以外, 还可以使用self来调用。</p>
+<blockquote>
+<p><code>[Iphone openFlahlight]</code>;<br><code>[self openFlahlight]</code>;</p>
+</blockquote>
+</li>
+<li><p>如果self在对象方法中, 那么self就代表调用当前对象方法的那个对象。<br>如果self在类方法中, 那么self就代表调用当前类方法的那个类。</p>
+</li>
+<li><p>总结:</p>
+<ul>
+<li>我们只用关注self在哪一个方法中 , 如果在类方法那么就代表当前类, 如果在对象方法那么就代表”当前调用该方法的对象”。</li>
+</ul>
+</li>
+<li><p>注意:</p>
+<ul>
+<li>self会自动区分类方法和对象方法, 如果在类方法中使用self调用对象方法, 那么会直接报错。</li>
+<li>不能在对象方法或者类方法中利用self调用当前self所在的方法。</li>
+</ul>
+</li>
+<li><p>使用场景:</p>
+<ul>
+<li>可以用于在对象方法之间进行相互调用。</li>
+<li>可以用于在类方法之间进行相互调用。</li>
+<li>可以用于区分成员变量和局部变量同名的情况。3</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-点语法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -236,217 +530,9 @@
 
 
   
-    <article id="post-这是一个-test" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/02/这是一个-test/" class="article-date">
-  	<time datetime="2016-04-02T12:50:49.000Z" itemprop="datePublished">2016-04-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/02/这是一个-test/">这是一个 test</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-t" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/01/05/t/" class="article-date">
-  	<time datetime="2016-01-05T09:02:52.000Z" itemprop="datePublished">2016-01-05</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/05/t/">t</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-test-1" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/01/05/test-1/" class="article-date">
-  	<time datetime="2016-01-05T08:55:43.000Z" itemprop="datePublished">2016-01-05</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/05/test-1/">test</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/03/test/" class="article-date">
-  	<time datetime="2015-12-03T10:08:09.000Z" itemprop="datePublished">2015-12-03</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/03/test/">test</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 </div>

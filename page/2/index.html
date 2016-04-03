@@ -72,7 +72,7 @@
 						<li>Tags</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -169,11 +169,11 @@
 
       <div class="body-wrap">
   
-    <article id="post-Homebrew-Homebrew-Cask-常用命令汇总" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-getter-setter-方法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/11/24/Homebrew-Homebrew-Cask-常用命令汇总/" class="article-date">
-  	<time datetime="2015-11-24T08:15:39.000Z" itemprop="datePublished">2015-11-24</time>
+      <a href="/2016/04/03/getter-setter-方法/" class="article-date">
+  	<time datetime="2016-04-03T02:45:57.000Z" itemprop="datePublished">2016-04-03</time>
 </a>
     </div>
   
@@ -186,7 +186,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/24/Homebrew-Homebrew-Cask-常用命令汇总/">Homebrew/Homebrew Cask 常用命令汇总</a>
+      <a class="article-title" href="/2016/04/03/getter-setter-方法/">getter-setter 方法</a>
     </h1>
   
 
@@ -195,25 +195,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>hexo</p>
-<p>npm install hexo -g #安装<br>npm update hexo -g #升级<br>hexo init #初始化<br>简写</p>
-<p>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo p == hexo publish<br>hexo g == hexo generate#生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy#部署</p>
-<p>服务器</p>
-<p>hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP</p>
-<p>hexo clean #清除缓存 网页正常情况下可以忽略此条命令<br>hexo g #生成静态网页<br>hexo d #开始部署</p>
-<p>监视文件变动</p>
-<p>hexo generate #使用 Hexo 生成静态文件快速而且简单<br>hexo generate –watch #监视文件变动</p>
-<p>完成后部署</p>
-<p>两个命令的作用是相同的<br>hexo generate –deploy<br>hexo deploy –generate<br>hexo deploy -g<br>hexo server -g</p>
-<p>草稿</p>
-<p>hexo publish [layout] <title></p>
-<p>模版</p>
-<p>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面至public目录<br>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>hexo deploy #将.deploy目录部署到GitHub</p>
-<p>hexo new [layout] <title><br>hexo new photo “My Gallery”<br>hexo new “Hello World” –lang tw</p>
-<p>变量    描述<br>layout    布局<br>title    标题<br>date    文件建立日期<br>title: 使用Hexo搭建个人博客<br>layout: post<br>date: 2014-03-03 19:07:43<br>comments: true<br>categories: Blog<br>tags: [Hexo]<br>keywords: Hexo, Blog<br>description: 生命在于折腾，又把博客折腾到Hexo了。给Hexo点赞。<br>模版（Scaffold）</p>
-<p>hexo new photo “My Gallery”</p>
-<p>变量    描述<br>layout    布局<br>title    标题<br>date    文件建立日期<br>设置文章摘要</p>
-<p>以上是文章摘要
+        <p>#1. setter方法:</p>
+<ul>
+<li>作用: 设置成员变量的值。</li>
+<li>格式:<ul>
+<li>setter方法一定是对象方法。</li>
+<li>一定没有返回值。</li>
+<li>一定以set开头, 并且set后面跟上需要设置的成员变量的名称去掉下划线, 并且首字母大写。</li>
+<li>一定有参数, 参数类型一定和需要设置的成员变量的类型一致, 并且参数名称就是成员变量的名称去掉下划线。</li>
+</ul>
+</li>
+</ul>
+<p>#2. getter方法:</p>
+<ul>
+<li>作用: 获取成员变量的值。</li>
+<li>格式:<ul>
+<li>getter方法一定是对象方法。</li>
+<li>一定有返回值, 而且返回值一定和获取的成员变量的类型一致。</li>
+<li>方法名称就是获取的成员变量的名称去掉下划线。</li>
+<li>一定没有参数。</li>
+</ul>
+</li>
+</ul>
+<p>#3.概念：</p>
+<ul>
+<li>如果某一个属性只提供了getter方法, 没有提供setter方法, 我们称这个属性为只读属性。</li>
+<li>如果某一个属性只提供了setter方法, 没有提供getter方法, 我们称这个属性为只写属性。</li>
+<li>如果某一个属性同时提供了setter方法和getter方法, 我们称这个属性为可读可写的属性。</li>
+<li>如果某一个属性没有提供了getter和setter,  我们称这个属性为私有属性。</li>
+</ul>
+
       
     </div>
     
@@ -222,10 +233,6 @@
       
       
 
-      
-        <p class="article-more-link">
-          <a  href="/2015/11/24/Homebrew-Homebrew-Cask-常用命令汇总/#more">more >></a>
-        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -243,11 +250,11 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-封装" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/11/22/hello-world/" class="article-date">
-  	<time datetime="2015-11-22T10:28:34.000Z" itemprop="datePublished">2015-11-22</time>
+      <a href="/2016/04/03/封装/" class="article-date">
+  	<time datetime="2016-04-03T02:45:36.000Z" itemprop="datePublished">2016-04-03</time>
 </a>
     </div>
   
@@ -260,7 +267,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/22/hello-world/">Hello World</a>
+      <a class="article-title" href="/2016/04/03/封装/">封装</a>
     </h1>
   
 
@@ -269,16 +276,222 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>#1. 什么是封装</p>
+<ul>
+<li>封装就是隐藏实现细节，仅对外公开接口/方法。</li>
+</ul>
+<p>#2. 封装的好处</p>
+<ul>
+<li>保证数据的安全性</li>
+<li>将变化隔离</li>
+</ul>
+<p>#3. 封装的规范</p>
+<ul>
+<li>一般情况下不会对外直接暴露成员变量, 都会提供一些共有的方法进行赋值。就是说，成员变量都需要封装起来。</li>
+</ul>
 
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Xcode-文档安装位置" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/Xcode-文档安装位置/" class="article-date">
+  	<time datetime="2016-04-03T02:45:20.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/Xcode-文档安装位置/">Xcode 文档安装位置</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1. Xcode文档安装的位置1:</p>
+<ul>
+<li><code>/Applications/Xcode.app/Contents/Developer/Documentation/DocSets</code><ul>
+<li>注意: 拷贝之前最好将默认的文档删除, 因为如果同时存在高版本和低版本的文档, 那么低版本的不会显示</li>
+</ul>
+</li>
+</ul>
+<p>#2. Xcode文档安装的位置2:</p>
+<ul>
+<li><code>/Users/你的用户名/Library/Developer/Shared/Documentation/DocSets</code><ul>
+<li>如果没有该文件夹可以自己创建一个</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-修改项目模板" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/修改项目模板/" class="article-date">
+  	<time datetime="2016-04-03T02:44:53.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/修改项目模板/">修改项目模板</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1. 修改项目模板以及main函数中的内容</p>
+<ul>
+<li><code>/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/Project Templates/Mac/Application/Command Line Tool.xctemplate/</code></li>
+</ul>
+<p>#2.修改OC文件头部的描述信息</p>
+<ul>
+<li><code>/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File Templates/Source/Cocoa Class.xctemplate</code></li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-匿名对象" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/匿名对象/" class="article-date">
+  	<time datetime="2016-04-03T02:44:13.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/匿名对象/">匿名对象</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1.基本概念</p>
+<ul>
+<li>匿名就是没有名字, 匿名对象就是没有名字的对象。</li>
+</ul>
+<p>#2.</p>
+<ul>
+<li>有名字的对象<ul>
+<li>只要用一个指针保存了某个对象的地址, 我们就可以称这个指针为某个对象</li>
+</ul>
+</li>
+<li>没有名字的对象<ul>
+<li>无论有没有名字, 只要调用new方法都会返回对象的地址</li>
+<li>每次new都会新开辟一块存储空间</li>
+</ul>
+</li>
+</ul>
+<p>#3.匿名对象的应用场景</p>
+<ul>
+<li>当对象只需要使用一次的时候就可以使用匿名对象</li>
+</ul>
+<figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Iphone *phone = <span class="comment">[Iphone new]</span>; // 0ffb11   phone = 0ffb11</span><br><span class="line"><span class="comment">[phone brand]</span>; // <span class="comment">[0ffb11 brand]</span>;</span><br><span class="line"><span class="comment">[<span class="comment">[Iphone new]</span> brand]</span>; // <span class="comment">[0fff5 brand]</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>匿名对象可以作为方法的参数(实参)</li>
+</ul>
+<figure class="highlight qml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Person *p1 = [Person <span class="keyword">new</span>];</span><br><span class="line"><span class="comment">//    Iphone *phone1 = [Iphone new];</span></span><br><span class="line"><span class="comment">//    [p1 signal:phone1];</span></span><br><span class="line">[p1 <span class="keyword">signal</span><span class="string"></span>:[Iphone <span class="keyword">new</span>]];</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -306,7 +519,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 </div>
