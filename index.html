@@ -72,7 +72,7 @@
 						<li>Tags</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -530,9 +530,221 @@
 
 
   
+    <article id="post-getter-setter-方法" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/getter-setter-方法/" class="article-date">
+  	<time datetime="2016-04-03T02:45:57.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/getter-setter-方法/">getter-setter 方法</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1. setter方法:</p>
+<ul>
+<li>作用: 设置成员变量的值。</li>
+<li>格式:<ul>
+<li>setter方法一定是对象方法。</li>
+<li>一定没有返回值。</li>
+<li>一定以set开头, 并且set后面跟上需要设置的成员变量的名称去掉下划线, 并且首字母大写。</li>
+<li>一定有参数, 参数类型一定和需要设置的成员变量的类型一致, 并且参数名称就是成员变量的名称去掉下划线。</li>
+</ul>
+</li>
+</ul>
+<p>#2. getter方法:</p>
+<ul>
+<li>作用: 获取成员变量的值。</li>
+<li>格式:<ul>
+<li>getter方法一定是对象方法。</li>
+<li>一定有返回值, 而且返回值一定和获取的成员变量的类型一致。</li>
+<li>方法名称就是获取的成员变量的名称去掉下划线。</li>
+<li>一定没有参数。</li>
+</ul>
+</li>
+</ul>
+<p>#3.概念：</p>
+<ul>
+<li>如果某一个属性只提供了getter方法, 没有提供setter方法, 我们称这个属性为只读属性。</li>
+<li>如果某一个属性只提供了setter方法, 没有提供getter方法, 我们称这个属性为只写属性。</li>
+<li>如果某一个属性同时提供了setter方法和getter方法, 我们称这个属性为可读可写的属性。</li>
+<li>如果某一个属性没有提供了getter和setter,  我们称这个属性为私有属性。</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-封装" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/封装/" class="article-date">
+  	<time datetime="2016-04-03T02:45:36.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/封装/">封装</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1. 什么是封装</p>
+<ul>
+<li>封装就是隐藏实现细节，仅对外公开接口/方法。</li>
+</ul>
+<p>#2. 封装的好处</p>
+<ul>
+<li>保证数据的安全性</li>
+<li>将变化隔离</li>
+</ul>
+<p>#3. 封装的规范</p>
+<ul>
+<li>一般情况下不会对外直接暴露成员变量, 都会提供一些共有的方法进行赋值。就是说，成员变量都需要封装起来。</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Xcode-文档安装位置" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/Xcode-文档安装位置/" class="article-date">
+  	<time datetime="2016-04-03T02:45:20.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/Xcode-文档安装位置/">Xcode 文档安装位置</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1. Xcode文档安装的位置1:</p>
+<ul>
+<li><code>/Applications/Xcode.app/Contents/Developer/Documentation/DocSets</code><ul>
+<li>注意: 拷贝之前最好将默认的文档删除, 因为如果同时存在高版本和低版本的文档, 那么低版本的不会显示</li>
+</ul>
+</li>
+</ul>
+<p>#2. Xcode文档安装的位置2:</p>
+<ul>
+<li><code>/Users/你的用户名/Library/Developer/Shared/Documentation/DocSets</code><ul>
+<li>如果没有该文件夹可以自己创建一个</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 </div>
