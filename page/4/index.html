@@ -75,175 +75,63 @@
     <div id="container">
       <div id="main">
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/04/03/面向对象基本概念/" title="面向对象基本概念" itemprop="url">面向对象基本概念</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="WDcount" target="_blank" itemprop="author">WDcount</a>
-		
-  <p class="article-time">
-    <time datetime="2016-04-03T02:37:45.000Z" itemprop="datePublished"> Published 2016-04-03</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h1 id="1-面向对象和面向过程的区别："><a href="#1-面向对象和面向过程的区别：" class="headerlink" title="1. 面向对象和面向过程的区别："></a>1. 面向对象和面向过程的区别：</h1><ul>
-<li>面向过程：<ul>
-<li>强调的是功能行为。</li>
-<li>关注的是解决问题需要哪些步骤。</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>面向对象：<ul>
-<li>将功能封装进对象，强调具备了功能的对象。</li>
-<li>关注的是解决问题需要哪些对象。</li>
-</ul>
-</li>
-</ul>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
   
-  <span></span> <a href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/04/03/基本概念/" title="基本概念" itemprop="url">基本概念</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="WDcount" target="_blank" itemprop="author">WDcount</a>
-		
-  <p class="article-time">
-    <time datetime="2016-04-03T02:36:49.000Z" itemprop="datePublished"> Published 2016-04-03</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h1 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h1><figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[])</span> </span><br><span class="line"></span>&#123; </span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>int main(a,b){}<br> a : 启动时，外部给程序传递的参数个数。<br> b : 分别保存各个参数。</li>
-</ul>
-<h1 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h1><ul>
-<li>OC 是兼容 C 的。所以可以在 OC 程序中编写 C 语言代码，并且可以将 C 语言的源文件和 OC 的源文件组合在一起生成可执行文件。</li>
-</ul>
-<ul>
-<li>OC 中跟C 中 printf函数功能相同的方法 NSLog();。</li>
-</ul>
-<ul>
-<li>NSLog 是 OC 向控制台输出信息的方法。</li>
-</ul>
-<ul>
-<li>格式：NSLog(@”字符串”);。</li>
-</ul>
-<ul>
-<li>NSLog()需要<code>import&lt;Foundation/Foundation.h&gt;</code>。</li>
-</ul>
-<h1 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h1><figure class="highlight qml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span><span class="string"> &lt;Foundation/Foundation.h&gt;</span></span><br><span class="line"><span class="keyword">import</span><span class="string"> "zs.h"</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>Foundation.h 被称为主头文件，头文件中又拷贝了该工具箱中所有工具的头文件，我们只需要导入头文件就可以使用该工具箱中的所有的工具，避免了每次使用都要导入一个相应的头文件。</li>
-</ul>
-<ul>
-<li>import 的作用跟 include 一样，是将右边的文件拷贝到当前 import 的位置。</li>
-</ul>
-<ul>
-<li>import 的优点：自动防止重复拷贝。</li>
-</ul>
-<ul>
-<li>import&lt;&gt;与 import””区别：<ul>
-<li>import&lt;&gt;:先编译器环境找，最后在系统环境找。</li>
-<li>import””:先在当前文件找，然后在编译器环境找，最后在系统环境找。</li>
-</ul>
-</li>
-</ul>
-<p>#4.</p>
-<ul>
-<li>printf 跟 NSLog 的区别：<ul>
-<li>NSLog 会自动换行。</li>
-<li>NSLog 在输出内容时会附加一些系统信息。</li>
-<li>NSLog 跟 printf 接收的参数不一样。</li>
-</ul>
-</li>
-</ul>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
+<section class="post" itemscope itemprop="blogitem">
   
-  <span></span> <a href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
+    <a href="/2016/04/03/面向对象基本概念/" title="面向对象基本概念" itemprop="url">
+  
+    <h1 itemprop="name">面向对象基本概念</h1>
+    
+     
+           <p itemprop="description" >1. 面向对象和面向过程的区别：
+面向过程：
+强调的是功能行为。
+关注的是解决问题需要哪些步骤。
 
 
 
 
+面向对象：
+将功能封装进对象，强调具备了功能的对象。
+关注的是解决问题需要哪些对象。</p>
+        
+    
+    <time datetime="2016-04-03T02:37:45.000Z" itemprop="datePublished">2016-04-03</time>
+  </a>
+</section>
 
 
 
-  <nav id="page-nav" class="clearfix">
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/04/03/基本概念/" title="基本概念" itemprop="url">
+  
+    <h1 itemprop="name">基本概念</h1>
+    
+     
+           <p itemprop="description" >1.1234int main(int argc, const char * argv[]) &amp;#123;   return 0;&amp;#125;
+
+int main(a,b){} a : 启动时，外部给程序传递的参数个数。 b : 分别保存各个参数。
+
+2.
+OC 是兼容 C 的。所</p>
+        
+    
+    <time datetime="2016-04-03T02:36:49.000Z" itemprop="datePublished">2016-04-03</time>
+  </a>
+</section>
+
+
+
+
+
+
+
+  <nav id="page-nav" class="clearfix unexpand">
     <a class="extend prev" rel="prev" href="/page/3/"><span></span>Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
   </nav>
 
