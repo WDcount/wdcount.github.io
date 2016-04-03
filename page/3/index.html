@@ -72,7 +72,7 @@
 						<li>Tags</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -88,6 +88,8 @@
 							<li><a href="/">主页</a></li>
 				        
 							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/iOS">iOS</a></li>
 				        
 						</ul>
 					</nav>
@@ -105,7 +107,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/123/" style="font-size: 10px;">123</a>
+						<a href="/tags/123/" style="font-size: 10px;">123</a> <a href="/tags/iOS-OC-笔记/" style="font-size: 20px;">iOS-OC 笔记</a>
 					</div>
 				</section>
 				
@@ -151,6 +153,8 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
+					<li><a href="/tags/iOS">iOS</a></li>
+		        
 		        <div class="clearfix"></div>
 				</ul>
 			</nav>
@@ -195,18 +199,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1. 什么是面向对象?</p>
-<ul>
+        <h1 id="1-什么是面向对象"><a href="#1-什么是面向对象" class="headerlink" title="1. 什么是面向对象?"></a>1. 什么是面向对象?</h1><ul>
 <li>找对象使用对象的方法(功能)</li>
 </ul>
-<p>#2. 对象</p>
-<p>#3. 什么是类?</p>
-<ul>
+<h1 id="2-对象"><a href="#2-对象" class="headerlink" title="2. 对象"></a>2. 对象</h1><h1 id="3-什么是类"><a href="#3-什么是类" class="headerlink" title="3. 什么是类?"></a>3. 什么是类?</h1><ul>
 <li>类就是用于描述对象的共性特征</li>
 <li>主要用于描述对象的属性和行为</li>
 </ul>
-<p>#4. 如何定义一个类</p>
-<ul>
+<h1 id="4-如何定义一个类"><a href="#4-如何定义一个类" class="headerlink" title="4. 如何定义一个类"></a>4. 如何定义一个类</h1><ul>
 <li><p>4.1类的声明</p>
 <ul>
 <li>声明类的目的: 告诉系统我们这个类中有哪些属性和方法</li>
@@ -219,8 +219,7 @@
  <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@implementation</span> 类名</span><br><span class="line"></span><br><span class="line">方法的实现</span><br><span class="line"></span><br><span class="line"><span class="variable">@end</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>#5. 如何创建对象</p>
-<ul>
+<h1 id="5-如何创建对象"><a href="#5-如何创建对象" class="headerlink" title="5. 如何创建对象"></a>5. 如何创建对象</h1><ul>
 <li>要想创建对象必须给类发送一个new消息, 调用类的new方法<ul>
 <li>开辟存储空间</li>
 <li>初始化属性</li>
@@ -232,12 +231,10 @@
 <li><p>5.1如何发送消息?  [类名/对象 方法名称]</p>
 </li>
 </ul>
-<p>#6. 修改对象的属性和获取对象的属性</p>
-<ul>
+<h1 id="6-修改对象的属性和获取对象的属性"><a href="#6-修改对象的属性和获取对象的属性" class="headerlink" title="6. 修改对象的属性和获取对象的属性"></a>6. 修改对象的属性和获取对象的属性</h1><ul>
 <li>因为类的本质是一个结构体, 所以我们是用一个指向结构体的指针保存了对象的地址, 所以我们可以通过指针操作结构体的方式来操作对象<br>   <code>p-&gt;属性名称 = 值;</code> // 对象的属性默认是受保护的, 必须把属性变为公开的才可以直接访问@public<br>   <code>NSLog(@&quot;age = %i&quot;, p-&gt;age);</code></li>
 </ul>
-<p>#7. 类中可以定义两种方法</p>
-<ul>
+<h1 id="7-类中可以定义两种方法"><a href="#7-类中可以定义两种方法" class="headerlink" title="7. 类中可以定义两种方法"></a>7. 类中可以定义两种方法</h1><ul>
 <li>7.1 对象方法<blockquote>
 <p>以-开头<br> 可以直接访问对象的属性<br> 必须使用对象调用<br> 对象方法中可以直接调用其它对象方法<br> 对象方法中可以直接调用类方法</p>
 </blockquote>
@@ -258,6 +255,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -303,7 +304,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
+        <ul>
 <li><p>只有类的声明，没有类的实现</p>
 </li>
 <li><p>漏了@end</p>
@@ -328,7 +329,7 @@
 </li>
 <li><p>OC可以没有@interface同样可以定义一个类</p>
 </li>
-</ol>
+</ul>
 
       
     </div>
@@ -336,6 +337,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -381,8 +386,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1. 函数和方法的区别</p>
-<ol>
+        <h1 id="1-函数和方法的区别"><a href="#1-函数和方法的区别" class="headerlink" title="1. 函数和方法的区别"></a>1. 函数和方法的区别</h1><ol>
 <li>函数属于整个文件,方法属于某一个类，方法如果离开类就不行。</li>
 <li>函数可以直接调用, 方法必须用对象或者类来调用。<ul>
 <li>注意: 虽然函数属于整个文件,但是如果把函数写在类的声明中会不识别。</li>
@@ -390,8 +394,7 @@
 </li>
 <li>不能把函数当做方法来调用, 也不能把方法当做函数来调用。</li>
 </ol>
-<p>#2.方法的注意点</p>
-<ol>
+<h1 id="2-方法的注意点"><a href="#2-方法的注意点" class="headerlink" title="2.方法的注意点"></a>2.方法的注意点</h1><ol>
 <li>方法可以没有声明只有实现。</li>
 <li><p>方法可以只有声明没有实现, 编译不会报错, 但是运行会报错</p>
 <ul>
@@ -402,8 +405,7 @@
 <p><code>reason: &#39;-[Person test]: unrecognized selector sent to instance 0x100400000&#39;</code></p>
 </li>
 </ol>
-<p>#3.类的注意点</p>
-<ol>
+<h1 id="3-类的注意点"><a href="#3-类的注意点" class="headerlink" title="3.类的注意点"></a>3.类的注意点</h1><ol>
 <li>类可以只有实现没有声明。<ul>
 <li>注意: 在开发中不建议这样写。</li>
 </ul>
@@ -416,6 +418,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -461,8 +467,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1.成员变量</p>
-<ul>
+        <h1 id="1-成员变量"><a href="#1-成员变量" class="headerlink" title="1.成员变量"></a>1.成员变量</h1><ul>
 <li><p>写在类声明的大括号中的变量, 我们称之为 成员变量(属性, 实例变量)。</p>
 </li>
 <li><p>成员变量只能通过对象来访问。</p>
@@ -474,8 +479,7 @@
 <li><p>存储在堆中的数据, 不会被自动释放, 只能程序员手动释放。</p>
 </li>
 </ul>
-<p>#2.全局变量</p>
-<ul>
+<h1 id="2-全局变量"><a href="#2-全局变量" class="headerlink" title="2.全局变量"></a>2.全局变量</h1><ul>
 <li><p>写在函数和大括号外部的变量, 我们称之为全局变量。</p>
 </li>
 <li><p>作用域: 从定义的那一行开始, 一直到文件末尾。</p>
@@ -487,8 +491,7 @@
 <li><p>程序一启动就会分配存储空间, 直到程序结束才会释放。</p>
 </li>
 </ul>
-<p>#3.局部变量</p>
-<ul>
+<h1 id="3-局部变量"><a href="#3-局部变量" class="headerlink" title="3.局部变量"></a>3.局部变量</h1><ul>
 <li><p>写在函数或者代码块中的变量, 我们称之为局部变量。</p>
 </li>
 <li><p>作用域: 从定义的那一行开始, 一直到遇到大括号或者return。</p>
@@ -507,6 +510,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -552,8 +559,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1. 类方法与对象方法</p>
-<ul>
+        <h1 id="1-类方法与对象方法"><a href="#1-类方法与对象方法" class="headerlink" title="1. 类方法与对象方法"></a>1. 类方法与对象方法</h1><ul>
 <li>类方法的声明与实现均与对象方法的声明与实现类似。<br>只是将 - 换作 + </li>
 <li>类方法必须用类来调用，对象方法必须用对象来调用。</li>
 <li>对象方法中可以直接访问属性（成员变量），类方法中不可以直接访问属性（成员变量）。</li>
@@ -566,8 +572,7 @@
 </ul>
 </li>
 </ul>
-<p>#2. 类方法的使用场景</p>
-<ul>
+<h1 id="2-类方法的使用场景"><a href="#2-类方法的使用场景" class="headerlink" title="2. 类方法的使用场景"></a>2. 类方法的使用场景</h1><ul>
 <li>如果方法中没有使用到属性（成员变量），那么能用类方法就用类方法。因为类方法的执行效率比对象方法高。</li>
 <li>类方法一般用于定义工具方法：<ul>
 <li>字符串查找</li>
@@ -576,8 +581,7 @@
 </ul>
 </li>
 </ul>
-<p>#3.枚举</p>
-<ul>
+<h1 id="3-枚举"><a href="#3-枚举" class="headerlink" title="3.枚举"></a>3.枚举</h1><ul>
 <li><p>第一种方式</p>
 <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">typedef <span class="class"><span class="keyword">enum</span></span></span><br><span class="line">&#123;</span><br><span class="line">    kIColorBlack, <span class="regexp">//</span> 黑色</span><br><span class="line">    kIColorWhite, <span class="regexp">//</span> 白色</span><br><span class="line">    kIColorTuHaoJin /<span class="regexp">/ 土豪金</span><br><span class="line">&#125; IColor;</span><br><span class="line">···</span><br><span class="line">···</span><br><span class="line">IColor _color;</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -585,8 +589,7 @@
 <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">IColor</span></span></span><br><span class="line">&#123;</span><br><span class="line">    kIColorBlack, <span class="regexp">//</span> 黑色</span><br><span class="line">    kIColorWhite, <span class="regexp">//</span> 白色</span><br><span class="line">    kIColorTuHaoJin /<span class="regexp">/ 土豪金</span><br><span class="line">&#125; ;</span><br><span class="line">···</span><br><span class="line">···</span><br><span class="line">enum IColor _color;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>#4.通过类创建对象</p>
-<blockquote>
+<h1 id="4-通过类创建对象"><a href="#4-通过类创建对象" class="headerlink" title="4.通过类创建对象"></a>4.通过类创建对象</h1><blockquote>
 <ol>
 <li>开辟存储空间, 通过new方法创建对象会在堆 内存中开辟一块存储空间。</li>
 <li>初始化所有属性。</li>
@@ -604,6 +607,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -649,8 +656,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1. </p>
-<ul>
+        <h1 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h1><ul>
 <li>OC 中的方法和 C 语言中的函数一样，都是用来保存一段特定功能的代码。</li>
 </ul>
 <ul>
@@ -695,8 +701,7 @@
 </ul>
 </li>
 </ul>
-<p>#2 方法类型</p>
-<ul>
+<h1 id="2-方法类型"><a href="#2-方法类型" class="headerlink" title="2 方法类型"></a>2 方法类型</h1><ul>
 <li><p>没有返回值没有参数</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)about;<span class="comment">//行为</span></span><br><span class="line">···</span><br><span class="line">···</span><br><span class="line">- (<span class="keyword">void</span>)about<span class="comment">//行为的实现</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="built_in">NSLog</span>(<span class="string">@"型号 = %f, cpu = %i, 尺寸 = %f, 颜色 = %i"</span>, _model, _cpu, _size,   _color);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
@@ -727,6 +732,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -772,19 +781,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1.什么是类?</p>
-<ul>
+        <h1 id="1-什么是类"><a href="#1-什么是类" class="headerlink" title="1.什么是类?"></a>1.什么是类?</h1><ul>
 <li>类就是用于描述对象的共性特征，主要用于描述对象的属性和行为。</li>
 </ul>
-<p>#2. 类与对象的关系</p>
-<ul>
+<h1 id="2-类与对象的关系"><a href="#2-类与对象的关系" class="headerlink" title="2. 类与对象的关系"></a>2. 类与对象的关系</h1><ul>
 <li><p>OC中的类好比生活当中的图纸，用来描述一些事物。也就是说，要想创建对象，必须先有类。</p>
 </li>
 <li><p>OC中的对象好比根据图纸创建出来的东西，是类的具体存在。因此，面向对象解决问题应该是先考虑需要设计哪些类，再利用类创建多少个对象。</p>
 </li>
 </ul>
-<p>#3. 如何设计一个类</p>
-<ul>
+<h1 id="3-如何设计一个类"><a href="#3-如何设计一个类" class="headerlink" title="3. 如何设计一个类"></a>3. 如何设计一个类</h1><ul>
 <li><p>生活中描述事物无非就是名称、属性、行为。</p>
 <ul>
 <li>如：人有名字，有身高、体重等属性，有说话、打架等行为。<br><code>事物名称（类名）：人（Person）</code><br><code>属性 ：身高（height）、年龄（age）</code><br><code>行为（功能）：跑（run）</code></li>
@@ -800,8 +806,7 @@
 <li><p>定义类其实在定义类中的成员（成员变量和成员方法）。</p>
 </li>
 </ul>
-<p>#4. 定义类</p>
-<ul>
+<h1 id="4-定义类"><a href="#4-定义类" class="headerlink" title="4. 定义类"></a>4. 定义类</h1><ul>
 <li><p>C 语言中函数分为声明和实现，OC 中定义一个类也分为声明和实现，也就是说，以后我们在 OC 中定义类，就是在写类的声明和实现。</p>
 </li>
 <li><p>编写类的声明：</p>
@@ -834,8 +839,7 @@
 </ul>
 </li>
 </ul>
-<p>#5. 通过类来创建对象</p>
-<ul>
+<h1 id="5-通过类来创建对象"><a href="#5-通过类来创建对象" class="headerlink" title="5. 通过类来创建对象"></a>5. 通过类来创建对象</h1><ul>
 <li>在 OC 中想要通过一个类来创建一个对象，必须给类发送一个消息（好比 C 语言中调用方法一样）。</li>
 </ul>
 <ul>
@@ -885,6 +889,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -930,8 +938,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1. 面向对象和面向过程的区别：</p>
-<ul>
+        <h1 id="1-面向对象和面向过程的区别："><a href="#1-面向对象和面向过程的区别：" class="headerlink" title="1. 面向对象和面向过程的区别："></a>1. 面向对象和面向过程的区别：</h1><ul>
 <li>面向过程：<ul>
 <li>强调的是功能行为。</li>
 <li>关注的是解决问题需要哪些步骤。</li>
@@ -952,6 +959,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       

@@ -72,7 +72,7 @@
 						<li>Tags</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -88,6 +88,8 @@
 							<li><a href="/">主页</a></li>
 				        
 							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/iOS">iOS</a></li>
 				        
 						</ul>
 					</nav>
@@ -105,7 +107,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/123/" style="font-size: 10px;">123</a>
+						<a href="/tags/123/" style="font-size: 10px;">123</a> <a href="/tags/iOS-OC-笔记/" style="font-size: 20px;">iOS-OC 笔记</a>
 					</div>
 				</section>
 				
@@ -151,6 +153,8 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
+					<li><a href="/tags/iOS">iOS</a></li>
+		        
 		        <div class="clearfix"></div>
 				</ul>
 			</nav>
@@ -195,15 +199,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1. Xcode文档安装的位置1:</p>
-<ul>
+        <h1 id="1-Xcode文档安装的位置1"><a href="#1-Xcode文档安装的位置1" class="headerlink" title="1. Xcode文档安装的位置1:"></a>1. Xcode文档安装的位置1:</h1><ul>
 <li><code>/Applications/Xcode.app/Contents/Developer/Documentation/DocSets</code><ul>
 <li>注意: 拷贝之前最好将默认的文档删除, 因为如果同时存在高版本和低版本的文档, 那么低版本的不会显示</li>
 </ul>
 </li>
 </ul>
-<p>#2. Xcode文档安装的位置2:</p>
-<ul>
+<h1 id="2-Xcode文档安装的位置2"><a href="#2-Xcode文档安装的位置2" class="headerlink" title="2. Xcode文档安装的位置2:"></a>2. Xcode文档安装的位置2:</h1><ul>
 <li><code>/Users/你的用户名/Library/Developer/Shared/Documentation/DocSets</code><ul>
 <li>如果没有该文件夹可以自己创建一个</li>
 </ul>
@@ -216,6 +218,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -261,12 +267,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1. 修改项目模板以及main函数中的内容</p>
-<ul>
+        <h1 id="1-修改项目模板以及main函数中的内容"><a href="#1-修改项目模板以及main函数中的内容" class="headerlink" title="1. 修改项目模板以及main函数中的内容"></a>1. 修改项目模板以及main函数中的内容</h1><ul>
 <li><code>/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/Project Templates/Mac/Application/Command Line Tool.xctemplate/</code></li>
 </ul>
-<p>#2.修改OC文件头部的描述信息</p>
-<ul>
+<h1 id="2-修改OC文件头部的描述信息"><a href="#2-修改OC文件头部的描述信息" class="headerlink" title="2.修改OC文件头部的描述信息"></a>2.修改OC文件头部的描述信息</h1><ul>
 <li><code>/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File Templates/Source/Cocoa Class.xctemplate</code></li>
 </ul>
 
@@ -276,6 +280,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -321,12 +329,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1.基本概念</p>
-<ul>
+        <h1 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1.基本概念"></a>1.基本概念</h1><ul>
 <li>匿名就是没有名字, 匿名对象就是没有名字的对象。</li>
 </ul>
-<p>#2.</p>
-<ul>
+<h1 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h1><ul>
 <li>有名字的对象<ul>
 <li>只要用一个指针保存了某个对象的地址, 我们就可以称这个指针为某个对象</li>
 </ul>
@@ -337,8 +343,7 @@
 </ul>
 </li>
 </ul>
-<p>#3.匿名对象的应用场景</p>
-<ul>
+<h1 id="3-匿名对象的应用场景"><a href="#3-匿名对象的应用场景" class="headerlink" title="3.匿名对象的应用场景"></a>3.匿名对象的应用场景</h1><ul>
 <li>当对象只需要使用一次的时候就可以使用匿名对象</li>
 </ul>
 <figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Iphone *phone = <span class="comment">[Iphone new]</span>; // 0ffb11   phone = 0ffb11</span><br><span class="line"><span class="comment">[phone brand]</span>; // <span class="comment">[0ffb11 brand]</span>;</span><br><span class="line"><span class="comment">[<span class="comment">[Iphone new]</span> brand]</span>; // <span class="comment">[0fff5 brand]</span>;</span><br></pre></td></tr></table></figure>
@@ -352,6 +357,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -397,13 +406,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1.</p>
-<ul>
+        <h1 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h1><ul>
 <li>.h 来放声明</li>
 <li>.m 来放实现</li>
 </ul>
-<p>#2. </p>
-<ul>
+<h1 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h1><ul>
 <li>多文件开发中, 要使用谁就导入谁的.h文件就可以了。</li>
 <li>注意: 导入的一定是.h文件, 不能是.m文件，如果导入.m文件会报重复定义错误。</li>
 </ul>
@@ -414,6 +421,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -466,6 +477,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -511,14 +526,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1. 对象作为方法的参数<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></span><br><span class="line"><span class="comment">/*</span><br><span class="line"> 士兵</span><br><span class="line"> 事物名称: 士兵(Soldier)</span><br><span class="line"> 属性:姓名(name), 身高(height), 体重(weight)</span><br><span class="line"> 行为:打枪(fire), 打电话(callPhone)</span><br><span class="line"> </span><br><span class="line"> 枪</span><br><span class="line"> 事物名称:枪(Gun)</span><br><span class="line"> 属性:弹夹(clip) , 型号(model)</span><br><span class="line"> 行为:上弹夹(addClip)</span><br><span class="line"> </span><br><span class="line"> 弹夹</span><br><span class="line"> 事物名称: 弹夹(Clip)</span><br><span class="line"> 属性:子弹(Bullet)</span><br><span class="line"> 行为:上子弹(addBullet)</span><br><span class="line"> */</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">Gun</span> : <span class="title">NSObject</span></span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">@public</span></span><br><span class="line">    <span class="keyword">int</span> _bullet; <span class="comment">// 子弹</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 射击</span></span><br><span class="line">- (<span class="keyword">void</span>)shoot;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">Gun</span></span></span><br><span class="line">- (<span class="keyword">void</span>)shoot</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 判断是否有子弹</span></span><br><span class="line">    <span class="keyword">if</span> (_bullet &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        </span><br><span class="line">        _bullet--;</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@"打了一枪 %i"</span>, _bullet);</span><br><span class="line">    &#125;<span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@"没有子弹了, 请换弹夹"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">Soldier</span> : <span class="title">NSObject</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">@public</span></span><br><span class="line">    <span class="built_in">NSString</span> *_name;</span><br><span class="line">    <span class="keyword">double</span> _height;</span><br><span class="line">    <span class="keyword">double</span> _weight;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)fire:(Gun *)gun;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">Soldier</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//  Gun * g = gp</span></span><br><span class="line">- (<span class="keyword">void</span>)fire:(Gun *)g</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//    NSLog(@"打了一枪");</span></span><br><span class="line">    [g shoot];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[]) &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 1.创建士兵</span></span><br><span class="line">    Soldier *sp =[Soldier new];</span><br><span class="line">    sp-&gt;_name = <span class="string">@"屎太浓"</span>;</span><br><span class="line">    sp-&gt;_height = <span class="number">1.88</span>;</span><br><span class="line">    sp-&gt;_weight = <span class="number">100.0</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 2.创建一把枪</span></span><br><span class="line">    Gun *gp = [Gun new];</span><br><span class="line">    gp-&gt;_bullet = <span class="number">10</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 2.让士兵开枪</span></span><br><span class="line">    <span class="comment">// 让对象作为方法的参数传递</span></span><br><span class="line">    [sp fire:gp];</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
+        <h1 id="1-对象作为方法的参数"><a href="#1-对象作为方法的参数" class="headerlink" title="1. 对象作为方法的参数"></a>1. 对象作为方法的参数</h1><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></span><br><span class="line"><span class="comment">/*</span><br><span class="line"> 士兵</span><br><span class="line"> 事物名称: 士兵(Soldier)</span><br><span class="line"> 属性:姓名(name), 身高(height), 体重(weight)</span><br><span class="line"> 行为:打枪(fire), 打电话(callPhone)</span><br><span class="line"> </span><br><span class="line"> 枪</span><br><span class="line"> 事物名称:枪(Gun)</span><br><span class="line"> 属性:弹夹(clip) , 型号(model)</span><br><span class="line"> 行为:上弹夹(addClip)</span><br><span class="line"> </span><br><span class="line"> 弹夹</span><br><span class="line"> 事物名称: 弹夹(Clip)</span><br><span class="line"> 属性:子弹(Bullet)</span><br><span class="line"> 行为:上子弹(addBullet)</span><br><span class="line"> */</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">Gun</span> : <span class="title">NSObject</span></span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">@public</span></span><br><span class="line">    <span class="keyword">int</span> _bullet; <span class="comment">// 子弹</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 射击</span></span><br><span class="line">- (<span class="keyword">void</span>)shoot;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">Gun</span></span></span><br><span class="line">- (<span class="keyword">void</span>)shoot</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 判断是否有子弹</span></span><br><span class="line">    <span class="keyword">if</span> (_bullet &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        </span><br><span class="line">        _bullet--;</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@"打了一枪 %i"</span>, _bullet);</span><br><span class="line">    &#125;<span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@"没有子弹了, 请换弹夹"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">Soldier</span> : <span class="title">NSObject</span></span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">@public</span></span><br><span class="line">    <span class="built_in">NSString</span> *_name;</span><br><span class="line">    <span class="keyword">double</span> _height;</span><br><span class="line">    <span class="keyword">double</span> _weight;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)fire:(Gun *)gun;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">Soldier</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//  Gun * g = gp</span></span><br><span class="line">- (<span class="keyword">void</span>)fire:(Gun *)g</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//    NSLog(@"打了一枪");</span></span><br><span class="line">    [g shoot];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[]) &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 1.创建士兵</span></span><br><span class="line">    Soldier *sp =[Soldier new];</span><br><span class="line">    sp-&gt;_name = <span class="string">@"屎太浓"</span>;</span><br><span class="line">    sp-&gt;_height = <span class="number">1.88</span>;</span><br><span class="line">    sp-&gt;_weight = <span class="number">100.0</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 2.创建一把枪</span></span><br><span class="line">    Gun *gp = [Gun new];</span><br><span class="line">    gp-&gt;_bullet = <span class="number">10</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 2.让士兵开枪</span></span><br><span class="line">    <span class="comment">// 让对象作为方法的参数传递</span></span><br><span class="line">    [sp fire:gp];</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -564,8 +582,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1. 初始化结构体属性</p>
-<ul>
+        <h1 id="1-初始化结构体属性"><a href="#1-初始化结构体属性" class="headerlink" title="1. 初始化结构体属性"></a>1. 初始化结构体属性</h1><ul>
 <li><p>方法一:强制转换</p>
 <ul>
 <li><code>stu-&gt;_birthday = (Date){1986, 1, 15};</code></li>
@@ -590,6 +607,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       
@@ -635,8 +656,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1. 基本概念</p>
-<ul>
+        <h1 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h1><ul>
 <li>只要在 C 语言字符串前面加上@符号，系统就会自动将 C 语言字符串转换成 OC 字符串。</li>
 <li>OC 中的字符串是一个对象，C 语言中的字符串不是一个对象。</li>
 <li>注意: 输出C语言的字符串使用%s，输出OC的字符串使用%@,  %@就专门用于输出对象类型的</li>
@@ -648,6 +668,10 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
       
 
       

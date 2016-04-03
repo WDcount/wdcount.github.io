@@ -6,64 +6,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>类、方法、函数、变量等总结 | WDcount | 勇敢不计代价</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#1. 什么是面向对象?
-
+  <meta name="description" content="1. 什么是面向对象?
 找对象使用对象的方法(功能)
 
-#2. 对象
-#3. 什么是类?
-
+2. 对象3. 什么是类?
 类就是用于描述对象的共性特征
 主要用于描述对象的属性和行为
 
-#4. 如何定义一个类
-
+4. 如何定义一个类
 4.1类的声明
 
 声明类的目的: 告诉系统我们这个类中有哪些属性和方法
 类名: 首字母大写
-: NSObject 为了让我们的类具备创建对象的能力, 也就是可以使用new方法123456@interface 类名 :">
+: NSObject 为了让我们的类具备创建对象的能力, 也就是可以使用new方法123456@interface 类名 : NSObjec">
 <meta property="og:type" content="article">
 <meta property="og:title" content="类、方法、函数、变量等总结">
 <meta property="og:url" content="http://yoursite.com/2016/04/03/类、方法、函数、变量等总结/index.html">
 <meta property="og:site_name" content="WDcount | 勇敢不计代价">
-<meta property="og:description" content="#1. 什么是面向对象?
-
+<meta property="og:description" content="1. 什么是面向对象?
 找对象使用对象的方法(功能)
 
-#2. 对象
-#3. 什么是类?
-
+2. 对象3. 什么是类?
 类就是用于描述对象的共性特征
 主要用于描述对象的属性和行为
 
-#4. 如何定义一个类
-
+4. 如何定义一个类
 4.1类的声明
 
 声明类的目的: 告诉系统我们这个类中有哪些属性和方法
 类名: 首字母大写
-: NSObject 为了让我们的类具备创建对象的能力, 也就是可以使用new方法123456@interface 类名 :">
-<meta property="og:updated_time" content="2016-04-03T03:16:37.000Z">
+: NSObject 为了让我们的类具备创建对象的能力, 也就是可以使用new方法123456@interface 类名 : NSObjec">
+<meta property="og:updated_time" content="2016-04-03T06:32:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="类、方法、函数、变量等总结">
-<meta name="twitter:description" content="#1. 什么是面向对象?
-
+<meta name="twitter:description" content="1. 什么是面向对象?
 找对象使用对象的方法(功能)
 
-#2. 对象
-#3. 什么是类?
-
+2. 对象3. 什么是类?
 类就是用于描述对象的共性特征
 主要用于描述对象的属性和行为
 
-#4. 如何定义一个类
-
+4. 如何定义一个类
 4.1类的声明
 
 声明类的目的: 告诉系统我们这个类中有哪些属性和方法
 类名: 首字母大写
-: NSObject 为了让我们的类具备创建对象的能力, 也就是可以使用new方法123456@interface 类名 :">
+: NSObject 为了让我们的类具备创建对象的能力, 也就是可以使用new方法123456@interface 类名 : NSObjec">
   
     <link rel="alternative" href="/atom.xml" title="WDcount | 勇敢不计代价" type="application/atom+xml">
   
@@ -121,7 +109,7 @@
 						<li>Tags</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -137,6 +125,8 @@
 							<li><a href="/">主页</a></li>
 				        
 							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/iOS">iOS</a></li>
 				        
 						</ul>
 					</nav>
@@ -154,7 +144,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/123/" style="font-size: 10px;">123</a>
+						<a href="/tags/123/" style="font-size: 10px;">123</a> <a href="/tags/iOS-OC-笔记/" style="font-size: 20px;">iOS-OC 笔记</a>
 					</div>
 				</section>
 				
@@ -200,6 +190,8 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
+					<li><a href="/tags/iOS">iOS</a></li>
+		        
 		        <div class="clearfix"></div>
 				</ul>
 			</nav>
@@ -241,6 +233,10 @@
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS-OC-笔记/">iOS-OC 笔记</a></li></ul>
+	</div>
+
         
 
         <div class="clearfix"></div>
@@ -249,18 +245,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#1. 什么是面向对象?</p>
-<ul>
+        <h1 id="1-什么是面向对象"><a href="#1-什么是面向对象" class="headerlink" title="1. 什么是面向对象?"></a>1. 什么是面向对象?</h1><ul>
 <li>找对象使用对象的方法(功能)</li>
 </ul>
-<p>#2. 对象</p>
-<p>#3. 什么是类?</p>
-<ul>
+<h1 id="2-对象"><a href="#2-对象" class="headerlink" title="2. 对象"></a>2. 对象</h1><h1 id="3-什么是类"><a href="#3-什么是类" class="headerlink" title="3. 什么是类?"></a>3. 什么是类?</h1><ul>
 <li>类就是用于描述对象的共性特征</li>
 <li>主要用于描述对象的属性和行为</li>
 </ul>
-<p>#4. 如何定义一个类</p>
-<ul>
+<h1 id="4-如何定义一个类"><a href="#4-如何定义一个类" class="headerlink" title="4. 如何定义一个类"></a>4. 如何定义一个类</h1><ul>
 <li><p>4.1类的声明</p>
 <ul>
 <li>声明类的目的: 告诉系统我们这个类中有哪些属性和方法</li>
@@ -273,8 +265,7 @@
  <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@implementation</span> 类名</span><br><span class="line"></span><br><span class="line">方法的实现</span><br><span class="line"></span><br><span class="line"><span class="variable">@end</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>#5. 如何创建对象</p>
-<ul>
+<h1 id="5-如何创建对象"><a href="#5-如何创建对象" class="headerlink" title="5. 如何创建对象"></a>5. 如何创建对象</h1><ul>
 <li>要想创建对象必须给类发送一个new消息, 调用类的new方法<ul>
 <li>开辟存储空间</li>
 <li>初始化属性</li>
@@ -286,12 +277,10 @@
 <li><p>5.1如何发送消息?  [类名/对象 方法名称]</p>
 </li>
 </ul>
-<p>#6. 修改对象的属性和获取对象的属性</p>
-<ul>
+<h1 id="6-修改对象的属性和获取对象的属性"><a href="#6-修改对象的属性和获取对象的属性" class="headerlink" title="6. 修改对象的属性和获取对象的属性"></a>6. 修改对象的属性和获取对象的属性</h1><ul>
 <li>因为类的本质是一个结构体, 所以我们是用一个指向结构体的指针保存了对象的地址, 所以我们可以通过指针操作结构体的方式来操作对象<br>   <code>p-&gt;属性名称 = 值;</code> // 对象的属性默认是受保护的, 必须把属性变为公开的才可以直接访问@public<br>   <code>NSLog(@&quot;age = %i&quot;, p-&gt;age);</code></li>
 </ul>
-<p>#7. 类中可以定义两种方法</p>
-<ul>
+<h1 id="7-类中可以定义两种方法"><a href="#7-类中可以定义两种方法" class="headerlink" title="7. 类中可以定义两种方法"></a>7. 类中可以定义两种方法</h1><ul>
 <li>7.1 对象方法<blockquote>
 <p>以-开头<br> 可以直接访问对象的属性<br> 必须使用对象调用<br> 对象方法中可以直接调用其它对象方法<br> 对象方法中可以直接调用类方法</p>
 </blockquote>
