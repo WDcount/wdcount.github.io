@@ -169,6 +169,104 @@
 
       <div class="body-wrap">
   
+    <article id="post-基本概念" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/基本概念/" class="article-date">
+  	<time datetime="2016-04-03T02:36:49.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/基本概念/">基本概念</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1.<br><figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[])</span> </span><br><span class="line"></span>&#123; </span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>int main(a,b){}<br> a : 启动时，外部给程序传递的参数个数。<br> b : 分别保存各个参数。</li>
+</ul>
+<p>#2.</p>
+<ul>
+<li>OC 是兼容 C 的。所以可以在 OC 程序中编写 C 语言代码，并且可以将 C 语言的源文件和 OC 的源文件组合在一起生成可执行文件。</li>
+</ul>
+<ul>
+<li>OC 中跟C 中 printf函数功能相同的方法 NSLog();。</li>
+</ul>
+<ul>
+<li>NSLog 是 OC 向控制台输出信息的方法。</li>
+</ul>
+<ul>
+<li>格式：NSLog(@”字符串”);。</li>
+</ul>
+<ul>
+<li>NSLog()需要<code>import&lt;Foundation/Foundation.h&gt;</code>。</li>
+</ul>
+<p>#3.<br><figure class="highlight qml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span><span class="string"> &lt;Foundation/Foundation.h&gt;</span></span><br><span class="line"><span class="keyword">import</span><span class="string"> "zs.h"</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>Foundation.h 被称为主头文件，头文件中又拷贝了该工具箱中所有工具的头文件，我们只需要导入头文件就可以使用该工具箱中的所有的工具，避免了每次使用都要导入一个相应的头文件。</li>
+</ul>
+<ul>
+<li>import 的作用跟 include 一样，是将右边的文件拷贝到当前 import 的位置。</li>
+</ul>
+<ul>
+<li>import 的优点：自动防止重复拷贝。</li>
+</ul>
+<ul>
+<li>import&lt;&gt;与 import””区别：<ul>
+<li>import&lt;&gt;:先编译器环境找，最后在系统环境找。</li>
+<li>import””:先在当前文件找，然后在编译器环境找，最后在系统环境找。</li>
+</ul>
+</li>
+</ul>
+<p>#4.</p>
+<ul>
+<li>printf 跟 NSLog 的区别：<ul>
+<li>NSLog 会自动换行。</li>
+<li>NSLog 在输出内容时会附加一些系统信息。</li>
+<li>NSLog 跟 printf 接收的参数不一样。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-这是一个-test" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
