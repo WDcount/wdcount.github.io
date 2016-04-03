@@ -105,7 +105,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						
+						<a href="/tags/123/" style="font-size: 10px;">123</a>
 					</div>
 				</section>
 				
@@ -168,6 +168,114 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-类、方法、函数、变量等总结" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/03/类、方法、函数、变量等总结/" class="article-date">
+  	<time datetime="2016-04-03T02:41:28.000Z" itemprop="datePublished">2016-04-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/03/类、方法、函数、变量等总结/">类、方法、函数、变量等总结</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1. 什么是面向对象?</p>
+<ul>
+<li>找对象使用对象的方法(功能)</li>
+</ul>
+<p>#2. 对象</p>
+<p>#3. 什么是类?</p>
+<ul>
+<li>类就是用于描述对象的共性特征</li>
+<li>主要用于描述对象的属性和行为</li>
+</ul>
+<p>#4. 如何定义一个类</p>
+<ul>
+<li><p>4.1类的声明</p>
+<ul>
+<li>声明类的目的: 告诉系统我们这个类中有哪些属性和方法</li>
+<li>类名: 首字母大写</li>
+<li>: NSObject 为了让我们的类具备创建对象的能力, 也就是可以使用new方法<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@interface</span> 类名 : NSObject</span><br><span class="line">&#123;</span><br><span class="line">  属性; <span class="comment">// 属性必须写到&#123;&#125;中, 属性名称以_开头</span></span><br><span class="line">&#125;</span><br><span class="line">方法; <span class="comment">// 方法必须写到&#123;&#125;外面</span></span><br><span class="line"><span class="variable">@end</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>4.2类的实现</p>
+ <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@implementation</span> 类名</span><br><span class="line"></span><br><span class="line">方法的实现</span><br><span class="line"></span><br><span class="line"><span class="variable">@end</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>#5. 如何创建对象</p>
+<ul>
+<li>要想创建对象必须给类发送一个new消息, 调用类的new方法<ul>
+<li>开辟存储空间</li>
+<li>初始化属性</li>
+<li>返回地址</li>
+</ul>
+</li>
+<li><p><code>类名 *p = [类名 new];</code></p>
+</li>
+<li><p>5.1如何发送消息?  [类名/对象 方法名称]</p>
+</li>
+</ul>
+<p>#6. 修改对象的属性和获取对象的属性</p>
+<ul>
+<li>因为类的本质是一个结构体, 所以我们是用一个指向结构体的指针保存了对象的地址, 所以我们可以通过指针操作结构体的方式来操作对象<br>   <code>p-&gt;属性名称 = 值;</code> // 对象的属性默认是受保护的, 必须把属性变为公开的才可以直接访问@public<br>   <code>NSLog(@&quot;age = %i&quot;, p-&gt;age);</code></li>
+</ul>
+<p>#7. 类中可以定义两种方法</p>
+<ul>
+<li>7.1 对象方法<blockquote>
+<p>以-开头<br> 可以直接访问对象的属性<br> 必须使用对象调用<br> 对象方法中可以直接调用其它对象方法<br> 对象方法中可以直接调用类方法</p>
+</blockquote>
+</li>
+<li>7.2 类方法<blockquote>
+<p>以+开头<br> 不可以直接访问对象的属性<br> 必须使用类调用<br> 类方法中不可以直接调用对象方法<br> 类方法中可以直接调用类方法</p>
+</blockquote>
+</li>
+<li>7.3 方法定义的注意点<blockquote>
+<p>方法名采用 驼峰命名<br> 方法中的数据类型都必须使用()括起来<br> 方法中每个参数的数据类型前面都必须加上:<br> :也是方法名的一部分</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-类、方法、函数、变量等常见错误" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -834,104 +942,6 @@
 <li>面向对象：<ul>
 <li>将功能封装进对象，强调具备了功能的对象。</li>
 <li>关注的是解决问题需要哪些对象。</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-基本概念" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/03/基本概念/" class="article-date">
-  	<time datetime="2016-04-03T02:36:49.000Z" itemprop="datePublished">2016-04-03</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/03/基本概念/">基本概念</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#1.<br><figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[])</span> </span><br><span class="line"></span>&#123; </span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>int main(a,b){}<br> a : 启动时，外部给程序传递的参数个数。<br> b : 分别保存各个参数。</li>
-</ul>
-<p>#2.</p>
-<ul>
-<li>OC 是兼容 C 的。所以可以在 OC 程序中编写 C 语言代码，并且可以将 C 语言的源文件和 OC 的源文件组合在一起生成可执行文件。</li>
-</ul>
-<ul>
-<li>OC 中跟C 中 printf函数功能相同的方法 NSLog();。</li>
-</ul>
-<ul>
-<li>NSLog 是 OC 向控制台输出信息的方法。</li>
-</ul>
-<ul>
-<li>格式：NSLog(@”字符串”);。</li>
-</ul>
-<ul>
-<li>NSLog()需要<code>import&lt;Foundation/Foundation.h&gt;</code>。</li>
-</ul>
-<p>#3.<br><figure class="highlight qml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span><span class="string"> &lt;Foundation/Foundation.h&gt;</span></span><br><span class="line"><span class="keyword">import</span><span class="string"> "zs.h"</span></span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>Foundation.h 被称为主头文件，头文件中又拷贝了该工具箱中所有工具的头文件，我们只需要导入头文件就可以使用该工具箱中的所有的工具，避免了每次使用都要导入一个相应的头文件。</li>
-</ul>
-<ul>
-<li>import 的作用跟 include 一样，是将右边的文件拷贝到当前 import 的位置。</li>
-</ul>
-<ul>
-<li>import 的优点：自动防止重复拷贝。</li>
-</ul>
-<ul>
-<li>import&lt;&gt;与 import””区别：<ul>
-<li>import&lt;&gt;:先编译器环境找，最后在系统环境找。</li>
-<li>import””:先在当前文件找，然后在编译器环境找，最后在系统环境找。</li>
-</ul>
-</li>
-</ul>
-<p>#4.</p>
-<ul>
-<li>printf 跟 NSLog 的区别：<ul>
-<li>NSLog 会自动换行。</li>
-<li>NSLog 在输出内容时会附加一些系统信息。</li>
-<li>NSLog 跟 printf 接收的参数不一样。</li>
 </ul>
 </li>
 </ul>
